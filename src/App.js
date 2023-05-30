@@ -83,7 +83,7 @@ function Content() {
   return <>pathompong</>;
 }
 function Content2() {
-  return <>pathompong2</>;
+  return <>pathompong22222</>;
 }
 
 // ******************************************* app start  *******************************************
