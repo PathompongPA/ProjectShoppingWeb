@@ -1,0 +1,44 @@
+
+#box-footer{
+    font-family: 'Red Hat Display';
+    /* border: 2px solid; */
+    background-color: rgb(243, 242, 242);
+    padding: 30px;
+    display: grid;
+    grid-template-columns: repeat(3,33%);
+    align-items: center;
+    text-align: start;
+
+    
+}
+p{
+    color: rgb(170, 170, 170);
+    font-size: small;
+    margin: 10px 0px;
+}
+br {
+    margin: 10px 0px;
+}
+#title-join{
+    font-size:small;
+    color: rgb(65, 65, 65);
+    font-style: light;
+}
+#sellerlist div {
+    font-family: 'Abril Fatface';
+    font-size:x-large;
+}
+#sellerlist  p {
+    margin-top: 1rem;
+}
+#e-mail{
+    border: 2px ;
+    margin-top: 20px;
+    width: 15rem;
+    height: 2.5rem;
+    padding: 3px 0px 0px 10px;
+    border-radius: 3rem;
+    background-color: white;
+    border-style: outset;
+    border-color: rgb(238, 238, 238);
+}

@@ -1,0 +1,65 @@
+*{
+    margin: 0;
+    padding: 0;
+    /* border: 2px solid; */
+    user-select: none;
+}
+#box-hearder1{
+    display: grid;
+    grid-template-columns: 10fr 1fr 1fr;
+    margin: 30px 30px 30px 30px;
+    align-self: center;
+}
+
+#Sellerlist a {
+    font-family: 'Abril Fatface';
+    border-style: none;
+    user-select: none;
+    font-size:xx-large;
+    /* text-transform: uppercase; */
+}
+#Singup{
+    background-color: rgb(255, 255, 255);
+    border: 2px solid;
+    border-radius: 50px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    width: 6rem;
+    height: 2rem;
+}
+
+#Singup :hover{
+    background-color: rgb(0, 0, 0);
+    color: white;
+    border-radius: 50px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    width: 6rem;
+    height: 2rem;
+    transition-duration: .3s;
+    cursor: pointer;
+}
+#Login{
+    background-color: rgb(255, 255, 255);
+    border: 2px solid;
+    border-radius: 50px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    width: 6rem;
+    height: 2rem;
+}
+#Login :hover{
+    background-color: rgb(0, 0, 0);
+    color: white;
+    border-radius: 50px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    width: 6rem;
+    height: 2rem;
+    transition-duration: .3s;
+    cursor: pointer;
+}
