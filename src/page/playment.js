@@ -1,9 +1,8 @@
-import { useState } from "react";
+import { useState, useContext, createContext } from "react";
 import "./playment.css";
 import { Link, useNavigate } from "react-router-dom";
 export default function Playment() {
   let nevigate = useNavigate();
-
   let test = [
     {
       name: "Colorful dress",
