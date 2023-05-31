@@ -1,5 +1,5 @@
 import { useState, useContext, createContext } from "react";
-import "./playment.css";
+import "./Playment.css";
 import { Link, useNavigate } from "react-router-dom";
 
 import React from 'react';
