@@ -4,6 +4,7 @@ import NavBarApp from "./component/ComNavbar";
 import Footer from "./component/ComFooter";
 import Playment from "./page/playment";
 import Womenswear from "./page/Womenswear";
+import { useContext } from "react";
 
 //                       !!!!!!!!!!!!!!!!!!!!!!!!!!!!!  value  !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
@@ -41,13 +42,13 @@ const Rawdata = [
 ];
 //                       !!!!!!!!!!!!!!!!!!!!!!!!!!!!!  value  !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
-
 // ******************************************* LayoutNav1 start *******************************************
 function LayoutNav1() {
-  // LayoutNav1 create for some page to have 3 section ,so have ... 
+  // LayoutNav1 create for some page to have 3 section ,so have ...
   //        Brander   ( logo , sing up (btn)  login (btn))
   //        NavbarApp ( menu bar )
-  //        footer 
+  //        footer
+  // const user = useContext(UseContext)
   return (
     <div>
       <Brandner keys={Rawdata[0].headers} />
@@ -59,21 +60,18 @@ function LayoutNav1() {
 }
 // ******************************************* LayoutNav1 end *******************************************
 
-
-
 // ******************************************* LayoutNav2 start *******************************************
 
 function LayoutNav2() {
-  // LayoutNav1 create for some page to have 2 section ,so have ... 
+  // LayoutNav1 create for some page to have 2 section ,so have ...
   //        Brander   ( logo , sing up (btn)  login (btn))
-  //        footer 
+  //        footer
 
   return (
     <div id="layoutnav2">
       <Brandner keys={Rawdata[0].headers} />
       <Outlet />
       {/* <Footer /> */}
-
     </div>
   );
 }

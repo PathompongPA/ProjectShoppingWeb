@@ -1,7 +1,19 @@
 import { useState, useContext, createContext } from "react";
 import "./playment.css";
 import { Link, useNavigate } from "react-router-dom";
+
+import React from 'react';
+import ReactLoading from 'react-loading';
+ 
+const Example = ({ type, color }) => (
+    <ReactLoading type={"spin"} color={"#fff"}/>
+);
+ 
+
+
+
 export default function Playment() {
+  const [user, setUser] = useState('sendvalue')
   let nevigate = useNavigate();
   let test = [
     {
@@ -21,7 +33,7 @@ export default function Playment() {
   });
   test.push({
     name: "Backpack",
-    price: 30,
+    price: 30222,
     size: "xxx- xxx ",
     material: "aaa",
     condition: "new",
@@ -38,12 +50,14 @@ export default function Playment() {
   //   console.log(test);
   return (
     <div id="box-main-playment">
+      <Example/>
       <div id="box-playment">
         <div id="box-left">
           <div
             id="bnt-back"
             onClick={() => {
               nevigate(-1);
+              setUser("asdfasdfasdfasdfdfasdfasdf")
             }}
           >
             <div id="box-btn-back">
