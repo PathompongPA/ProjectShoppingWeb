@@ -4,7 +4,6 @@ import NavBarApp from "./component/ComNavbar";
 import Footer from "./component/ComFooter";
 import Playment from "./page/Playment";
 import Womenswear from "./page/Womenswear";
-import { useContext } from "react";
 
 //                       !!!!!!!!!!!!!!!!!!!!!!!!!!!!!  value  !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 

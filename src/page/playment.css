@@ -20,10 +20,7 @@ html {
   grid-template-columns: 60% 40%;
   /* border: 2px solid black; */
 }
-#box-left {
-  /* margin: 2rem; */
-  /* overflow: scroll; */
-}
+
 #box-right {
   background-color: rgb(247, 247, 247);
   height: 100%;
