@@ -1,0 +1,24 @@
+#Singup-page{
+     /* margin-top: 50vh; */
+     display: flex;
+     /* flex-direction: row; */
+     justify-content: center;
+     align-self: center;
+     /* background-color: antiquewhite; */
+     /* border: 2px solid; */
+     padding: 10vh;
+}
+#Singup-page2{
+     border-radius: 20px;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     /* align-self: center; */
+     border: 2px solid;
+     padding: 10vh;
+     background-color: antiquewhite;
+
+}
+#box-SingUp{
+     /* border: 2px solid; */
+}

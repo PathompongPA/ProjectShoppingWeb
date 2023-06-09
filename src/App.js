@@ -4,6 +4,7 @@ import NavBarApp from "./component/ComNavbar";
 import Footer from "./component/ComFooter";
 import Playment from "./page/Playment";
 import Womenswear from "./page/Womenswear";
+import SingUp from "./page/SingUp";
 
 //                       !!!!!!!!!!!!!!!!!!!!!!!!!!!!!  value  !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 //ssss s
@@ -26,6 +27,7 @@ const Rawdata = [
     ],
     forurl: [
       { path: "Playment", element: <Playment /> },
+      { path: "SingUp", element: <SingUp /> },
       { path: "Womenswear", element: <Womenswear /> },
       { path: "Menswear", element: "Menswear" },
       { path: "Kidwear", element: "Kidwear" },
@@ -34,7 +36,6 @@ const Rawdata = [
       { path: "Homeware", element: "Homeware" },
       { path: "Sellitem", element: "Sell item" },
       { path: "", element: "Sellerlist" },
-      { path: "Singup", element: "Sing up" },
       { path: "Login", element: "Log in" },
     ],
   },
@@ -43,11 +44,6 @@ const Rawdata = [
 
 // ******************************************* LayoutNav1 start *******************************************
 function LayoutNav1() {
-  // LayoutNav1 create for some page to have 3 section ,so have ...
-  //        Brander   ( logo , sing up (btn)  login (btn))
-  //        NavbarApp ( menu bar )
-  //        footer
-  // const user = useContext(UseContext)
   return (
     <div>
       <Brandner keys={Rawdata[0].headers} />
@@ -62,49 +58,56 @@ function LayoutNav1() {
 // ******************************************* LayoutNav2 start *******************************************
 
 function LayoutNav2() {
-  // LayoutNav1 create for some page to have 2 section ,so have ...
-  //        Brander   ( logo , sing up (btn)  login (btn))
-  //        footer
-
   return (
     <div id="layoutnav2">
       <Brandner keys={Rawdata[0].headers} />
-      <Outlet />
-      {/* <Footer /> */}
+      <Outlet/>
+      
     </div>
   );
 }
+
 // ******************************************* LayoutNav1 end *******************************************
 
-function Content() {
-  return <>pathompong</>;
-}
-function Content2() {
-  return <>pathompong2</>;
-}
-
 // ******************************************* app start  *******************************************
+
 export default function App() {
-  const rowmap = Rawdata[0].forurl.slice(1);
+  const rowmap = Rawdata[0].forurl.slice(2);
   console.log(` row map : ${Rawdata[0].forurl[0].path}`);
   return (
     <>
       <BrowserRouter>
         <Routes>
+          {/* *******************  layout 1 ********************* */}
           <Route path="/" element={<LayoutNav1 />}>
             {rowmap.map((prop) => {
               console.log(prop.path);
+
               let url = prop.path;
               let elements = prop.element;
+
               // let elements = prop.title;
               return <Route path={url} element={elements} />;
             })}
           </Route>
-          <Route
-            path={"/" + Rawdata[0].forurl[0].path}
-            element={<LayoutNav2 />}
-          >
-            <Route path="" element={<Playment />} />
+
+
+          {/* *******************  layout 2  ********************* */}
+          <Route path="/" element={<LayoutNav2 />}>
+            <Route path={Rawdata[0].forurl[0].path} element={<Playment />} />;
+            <Route path={Rawdata[0].forurl[1].path} element={<SingUp />} />;
+
+          </Route>
+
+
+
+          {/* *******************  layout 3  ********************* */}
+
+          <Route path="/" >
+            <Route
+              path={Rawdata[0].forurl[1].path}
+              element={<SingUp />}
+            ></Route>
           </Route>
         </Routes>
       </BrowserRouter>

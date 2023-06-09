@@ -1,6 +1,6 @@
 import { Link, Outlet } from "react-router-dom";
 import "./ComHearder.css";
-import { Urlname } from "../App";
+
 export default function Brandner (prop) {
   const title = prop.keys.slice(1)
   return (

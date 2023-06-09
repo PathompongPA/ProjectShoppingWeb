@@ -7,8 +7,10 @@
 #box-hearder1{
     display: grid;
     grid-template-columns: 10fr 1fr 1fr;
-    margin: 30px 30px 30px 30px;
+    padding: 30px 30px 30px 30px;
     align-self: center;
+    border-bottom: 2px solid;
+    border-color: rgb(241, 240, 240);
 }
 
 #Sellerlist a {

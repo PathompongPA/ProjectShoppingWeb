@@ -5,7 +5,7 @@ body {
   overflow-x: hidden;
 }
 #box-navbarapp{
-  border-width: 2px 0px 2px 0px;
+  border-width: 0px 0px 2px 0px;
   border-style: solid ;
   border-color: rgb(241, 240, 240);
 }
