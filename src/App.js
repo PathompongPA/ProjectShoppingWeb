@@ -2,10 +2,10 @@ import { BrowserRouter, Routes, Route, Outlet } from "react-router-dom";
 import Brandner from "./component/ComHearder";
 import NavBarApp from "./component/ComNavbar";
 import Footer from "./component/ComFooter";
-import Playment from "./page/Playment";
 import Womenswear from "./page/Womenswear";
 import SingUp from "./page/SingUp";
 import Routing from "./Routing";
+import Playment from "./page/playment";
 
 //                       !!!!!!!!!!!!!!!!!!!!!!!!!!!!!  value  !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 //ssss s

@@ -2,7 +2,7 @@ import { useRoutes } from "react-router-dom";
 import { LayoutNav1, LayoutNav2, LayoutNav3 } from "./App";
 import Womenswear from "./page/Womenswear";
 import ErrorPage from "./page/ErrorPage";
-import Playment from "./page/Playment";
+import Playment from "./page/playment";
 import SingUp from "./page/SingUp";
 
 export default function Routing() {
@@ -22,9 +22,9 @@ export default function Routing() {
           children: [],
         },
         {
-          path : "Kidwear",
-          element : <ErrorPage/>,
-          children : [],
+          path: "Kidwear",
+          element: <ErrorPage />,
+          children: [],
         },
         {
           path: "Beauty",
@@ -54,7 +54,7 @@ export default function Routing() {
         {
           path: "Singup",
           element: <SingUp />,
-          children: [] ,
+          children: [],
         },
         {
           path: "Login",
