@@ -5,6 +5,7 @@ import Footer from "./component/ComFooter";
 import Playment from "./page/Playment";
 import Womenswear from "./page/Womenswear";
 import SingUp from "./page/SingUp";
+import Routing from "./Routing";
 
 //                       !!!!!!!!!!!!!!!!!!!!!!!!!!!!!  value  !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 //ssss s
@@ -43,10 +44,9 @@ const Rawdata = [
 //                       !!!!!!!!!!!!!!!!!!!!!!!!!!!!!  value  !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
 // ******************************************* LayoutNav1 start *******************************************
-function LayoutNav1() {
+function LayoutNav2() {
   return (
     <div>
-      <Brandner keys={Rawdata[0].headers} />
       <NavBarApp keys={Rawdata[0].titleNavbar} />
       <Outlet />
       <Footer />
@@ -57,7 +57,7 @@ function LayoutNav1() {
 
 // ******************************************* LayoutNav2 start *******************************************
 
-function LayoutNav2() {
+function LayoutNav1() {
   return (
     <div id="layoutnav2">
       <Brandner keys={Rawdata[0].headers} />
@@ -67,6 +67,16 @@ function LayoutNav2() {
   );
 }
 
+function LayoutNav3 () {
+  return(
+    <div id="layoutnav3">
+      <Brandner keys={Rawdata[0].headers} />
+      <NavBarApp keys={Rawdata[0].titleNavbar} />
+      <Outlet/>
+      <Footer></Footer>
+    </div>
+  )
+  }
 // ******************************************* LayoutNav1 end *******************************************
 
 // ******************************************* app start  *******************************************
@@ -77,41 +87,10 @@ export default function App() {
   return (
     <>
       <BrowserRouter>
-        <Routes>
-          {/* *******************  layout 1 ********************* */}
-          <Route path="/" element={<LayoutNav1 />}>
-            {rowmap.map((prop) => {
-              console.log(prop.path);
-
-              let url = prop.path;
-              let elements = prop.element;
-
-              // let elements = prop.title;
-              return <Route path={url} element={elements} />;
-            })}
-          </Route>
-
-
-          {/* *******************  layout 2  ********************* */}
-          <Route path="/" element={<LayoutNav2 />}>
-            <Route path={Rawdata[0].forurl[0].path} element={<Playment />} />;
-            <Route path={Rawdata[0].forurl[1].path} element={<SingUp />} />;
-
-          </Route>
-
-
-
-          {/* *******************  layout 3  ********************* */}
-
-          <Route path="/" >
-            <Route
-              path={Rawdata[0].forurl[1].path}
-              element={<SingUp />}
-            ></Route>
-          </Route>
-        </Routes>
+        <Routing/>
       </BrowserRouter>
     </>
   );
 }
 // ******************************************* app end  *******************************************
+export {LayoutNav1,LayoutNav2,LayoutNav3}

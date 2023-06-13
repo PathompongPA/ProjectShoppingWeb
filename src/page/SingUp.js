@@ -22,15 +22,6 @@ export default function SingUp() {
               <br></br>
               <div> Sing up </div>
             </form>
-
-            <GoogleLogin
-              onSuccess={(credentialResponse) => {
-                console.log(credentialResponse);
-              }}
-              onError={() => {
-                console.log("Login Failed");
-              }}
-            />
           </div>
         </div>
       </div>
