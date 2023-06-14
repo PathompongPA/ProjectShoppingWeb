@@ -2,7 +2,7 @@ import { useRoutes } from "react-router-dom";
 import { LayoutNav1, LayoutNav2, LayoutNav3 } from "./App";
 import Womenswear from "./page/Womenswear";
 import ErrorPage from "./page/ErrorPage";
-import Playment from "./page/playment";
+import Playment from "./page/Playment";
 import SingUp from "./page/SingUp";
 
 export default function Routing() {

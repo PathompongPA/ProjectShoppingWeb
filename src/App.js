@@ -5,7 +5,7 @@ import Footer from "./component/ComFooter";
 import Womenswear from "./page/Womenswear";
 import SingUp from "./page/SingUp";
 import Routing from "./Routing";
-import Playment from "./page/playment";
+import Playment from "./page/Playment";
 
 //                       !!!!!!!!!!!!!!!!!!!!!!!!!!!!!  value  !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 //ssss s

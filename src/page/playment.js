@@ -5,30 +5,7 @@ import { useNavigate } from "react-router-dom";
 export default function Playment() {
 
   let nevigate = useNavigate();
-  let test = [
-    {
-      name: "Colorful dress",
-      price: 10,
-      size: "xxx- xxx ",
-      material: "aaa",
-      condition: "new",
-    },
-  ];
-  test.push({
-    name: "Backpack",
-    price: 30,
-    size: "xxx- xxx ",
-    material: "aaa",
-    condition: "new",
-  });
-  test.push({
-    name: "Backpack",
-    price: 30222,
-    size: "xxx- xxx ",
-    material: "aaa",
-    condition: "new",
-  });
-  test = [""];
+ 
 
   const price = test?.map((prop) => {
     console.log(`loop ${prop.name}`);
